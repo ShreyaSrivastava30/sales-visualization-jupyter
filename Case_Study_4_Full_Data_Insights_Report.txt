@@ -1,0 +1,154 @@
+# Case Study 4 - Full Data Insights
+
+**Number of Rows:** 1000
+**Number of Columns:** 14
+
+## Columns
+AccountId, AccountName, Region, Division, City, State, Tier, Month, Sales2015, Sales2016, Units2015, Units2016, TargetAchevied2015, TargetAchevied2016
+
+## Categorical Columns Summary
+### Region
+- West: 280
+- North: 258
+- East: 232
+- South: 230
+
+### Division
+- Consumer: 341
+- Corporate: 331
+- Small Business: 328
+
+### City
+- Chennai: 217
+- Kolkata: 212
+- Mumbai: 209
+- Delhi: 190
+- Bangalore: 172
+
+### State
+- Tamil Nadu: 218
+- Delhi: 208
+- Karnataka: 203
+- West Bengal: 200
+- Maharashtra: 171
+
+### Tier
+- Tier 1: 348
+- Tier 3: 328
+- Tier 2: 324
+
+### Month
+- 8: 95
+- 6: 94
+- 4: 91
+- 7: 90
+- 11: 88
+- 10: 88
+- 12: 80
+- 5: 79
+- 1: 79
+- 3: 77
+- 2: 73
+- 9: 66
+
+## Numerical Columns Summary (Descriptive Statistics)
+### Sales2015
+- count: 1000.00
+- mean: 2035.30
+- std: 1407.71
+- min: 30.30
+- 25%: 1009.06
+- 50%: 1725.91
+- 75%: 2727.45
+- max: 10337.93
+
+### Sales2016
+- count: 1000.00
+- mean: 1956.94
+- std: 1550.38
+- min: -150.69
+- 25%: 844.45
+- 50%: 1575.16
+- 75%: 2785.41
+- max: 9279.96
+
+### Units2015
+- count: 1000.00
+- mean: 4.97
+- std: 2.29
+- min: 0.00
+- 25%: 3.00
+- 50%: 5.00
+- 75%: 6.00
+- max: 14.00
+
+### Units2016
+- count: 1000.00
+- mean: 6.13
+- std: 2.59
+- min: 0.00
+- 25%: 4.00
+- 50%: 6.00
+- 75%: 8.00
+- max: 15.00
+
+### TargetAchevied2015
+- count: 1000.00
+- mean: 1.03
+- std: 0.29
+- min: 0.50
+- 25%: 0.78
+- 50%: 1.04
+- 75%: 1.28
+- max: 1.50
+
+### TargetAchevied2016
+- count: 1000.00
+- mean: 1.01
+- std: 0.34
+- min: 0.40
+- 25%: 0.71
+- 50%: 1.01
+- 75%: 1.31
+- max: 1.60
+
+## Correlations Between Numerical Columns
+- Corr(Sales2015, Sales2015) = 1.00
+- Corr(Sales2015, Sales2016) = 0.01
+- Corr(Sales2015, Units2015) = 0.00
+- Corr(Sales2015, Units2016) = -0.01
+- Corr(Sales2015, TargetAchevied2015) = 0.01
+- Corr(Sales2015, TargetAchevied2016) = 0.02
+- Corr(Sales2016, Sales2015) = 0.01
+- Corr(Sales2016, Sales2016) = 1.00
+- Corr(Sales2016, Units2015) = 0.05
+- Corr(Sales2016, Units2016) = 0.02
+- Corr(Sales2016, TargetAchevied2015) = -0.03
+- Corr(Sales2016, TargetAchevied2016) = 0.03
+- Corr(Units2015, Sales2015) = 0.00
+- Corr(Units2015, Sales2016) = 0.05
+- Corr(Units2015, Units2015) = 1.00
+- Corr(Units2015, Units2016) = -0.00
+- Corr(Units2015, TargetAchevied2015) = -0.03
+- Corr(Units2015, TargetAchevied2016) = -0.03
+- Corr(Units2016, Sales2015) = -0.01
+- Corr(Units2016, Sales2016) = 0.02
+- Corr(Units2016, Units2015) = -0.00
+- Corr(Units2016, Units2016) = 1.00
+- Corr(Units2016, TargetAchevied2015) = 0.03
+- Corr(Units2016, TargetAchevied2016) = 0.01
+- Corr(TargetAchevied2015, Sales2015) = 0.01
+- Corr(TargetAchevied2015, Sales2016) = -0.03
+- Corr(TargetAchevied2015, Units2015) = -0.03
+- Corr(TargetAchevied2015, Units2016) = 0.03
+- Corr(TargetAchevied2015, TargetAchevied2015) = 1.00
+- Corr(TargetAchevied2015, TargetAchevied2016) = 0.01
+- Corr(TargetAchevied2016, Sales2015) = 0.02
+- Corr(TargetAchevied2016, Sales2016) = 0.03
+- Corr(TargetAchevied2016, Units2015) = -0.03
+- Corr(TargetAchevied2016, Units2016) = 0.01
+- Corr(TargetAchevied2016, TargetAchevied2015) = 0.01
+- Corr(TargetAchevied2016, TargetAchevied2016) = 1.00
+
+## Data Quality Checks
+- Negative Sales2016 values: 19
